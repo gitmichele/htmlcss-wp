@@ -26,10 +26,6 @@ body{
 
 
 /* header - image and navbar settings*/
-header{
-    /* DEBUG:  */
-}
-
 header img{
     width: calc(70px + 2.5vw);
     margin-bottom: 20px;
@@ -93,10 +89,6 @@ header li{
 
 
 /* sezione principale - titolo */
-.title{
-    /* DEBUG:  */
-}
-
 .title h1{
     color: black;
     font-size: calc(1em + 1vw);
@@ -147,6 +139,7 @@ header li{
     color: black;
     margin: 10px 0;
 }
+
 
 
 /* footer */
