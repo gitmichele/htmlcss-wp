@@ -4,7 +4,11 @@
     padding: 0;
     box-sizing: border-box;
     border-radius: 10px;
+}
+
+body{
     font-family: 'Montserrat', sans-serif;
+    color: #b2b2b2;
 }
 
 .container{
@@ -68,22 +72,38 @@ header li{
 
 .jumbo-text{
     position: absolute;
-    width: calc(100% - 60vh); 
+    width: calc(100% - 60vh);
     min-width: 50%;
     color: white;
     bottom: 13%;
     left: 5%;
 }
 
-#jumbo-title{
-    font-size: 1.8em;
+.jumbo-text a{
+    font-size: calc(.8em + 1vw);
+    text-decoration: none;
+    color: white;
 }
+
+.jumbotron:hover .jumbo-text a{
+    text-decoration: underline;
+}
+
+
+
 
 /* sezione principale - titolo */
 .title{
     /* DEBUG:  */
-    height: 75px;
-    background-color: red;
+}
+
+.title h1{
+    color: black;
+    font-size: calc(1em + 1vw);
+}
+
+.title h5{
+    font-size: calc(.2em + 1vw);
 }
 
 
