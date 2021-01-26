@@ -68,6 +68,7 @@ header li{
     height: 100%;
     position: absolute;
     background: rgba(0,0,0,.20);
+    z-index: 999;
 }
 
 .jumbo-text{
@@ -107,24 +108,46 @@ header li{
 }
 
 
+
+
 /* sezione principale - posiziono colonne con float */
 .aside{
     float: left;
-    width: 25%;
-    /* DEBUG:  */
-    height: 500px;
-    background-color: lightgreen
+    width: 20%;
+    position: relative;
 }
 
 .central{
     float:left;
-    width: calc(50% - 40px);
+    width: calc(60% - 40px);
     margin: 0 20px;
-    /* DEBUG:  */
-    height: 500px;
-    background-color: lightgreen;
 }
 
+.aside div:first-child, .central div:first-child{
+    width: 100%;
+    height: 25vh;
+    max-height: 200px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#left{
+    background-image: url(../img/img-1.jpg);
+}
+ #central-bg{
+    background-image: url(../img/banner-2.jpg);
+ }
+
+#right{
+    background-image: url(../img/img-3.jpg);
+}
+
+.row h5{
+    font-size: calc(.2em + 1vw);
+    color: black;
+    margin: 10px 0;
+}
 
 
 /* footer */
