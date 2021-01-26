@@ -6,17 +6,21 @@
     border-radius: 10px;
 }
 
+/* setto un font per tutta la pagina */
 body{
     font-family: 'Montserrat', sans-serif;
     color: #b2b2b2;
+    font-size: calc(.2em + .8vw);
 }
 
+/* classe container da attribuire ai blocchi che desidero centrare (in questo caso tutti) */
 .container{
     width: calc(50% + 20vw) ;
     max-width: 1200px;
     margin: 40px auto;
 }
 
+/* clearfix */
 .row::after{
     content: "";
     display: table;
@@ -24,24 +28,26 @@ body{
 }
 
 
-
 /* header - image and navbar settings*/
+/* logo */
 header img{
     width: calc(70px + 2.5vw);
     margin-bottom: 20px;
 }
 
+/* navbar */
 header a{
     text-decoration: none;
     color: #b2b2b2;
-    font-size: .8em;
-    padding: 20px 10px;
+    padding: 20px calc(5px + .1vw);
 }
 
+/* voglio che il logo sia parte della navbar ma che stia su un'altra riga */
 header li:first-child{
     display: block;
 }
 
+/* link della navbar */
 header li{
     list-style-type: none;
     display: inline-block;
@@ -51,21 +57,17 @@ header li{
 
 
 /* jumbotron */
+/* contenitore del jumbotron con immagine di sfondo*/
 .jumbotron{
     height: 50vh;
     max-height: 450px;
-    background-image: url(../img/banner.jpg);
+    /* per l'overlay uso linear gradient invece di creare appositi div e sporcare l'html */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/banner.jpg);
     background-position: center;
     position: relative;
 }
 
-.overlay{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(0,0,0,.20);
-}
-
+/* testo del jumbotron */
 .jumbo-text{
     position: absolute;
     width: calc(100% - 60vh);
@@ -75,6 +77,7 @@ header li{
     left: 5%;
 }
 
+/* titolo del jumbotron con comportamento particolare quando viene hoverato il suo contenitore */
 .jumbo-text a{
     font-size: calc(.8em + 1vw);
     text-decoration: none;
@@ -102,36 +105,44 @@ header li{
 
 
 /* sezione principale - posiziono colonne con float */
+/* colonne laterali */
 .aside{
     float: left;
     width: 20%;
     position: relative;
 }
 
+/* colonna centrale */
 .central{
     float:left;
     width: calc(60% - 40px);
     margin: 0 20px;
 }
 
-.aside div:first-child, .central div:first-child{
+/* setto le dimensioni del contenitore delle immagini */
+.image{
     width: 100%;
     height: 25vh;
     max-height: 200px;
+}
+
+/* ogni colonna ha un immagine di bg personalizzata + linear grad per l'overlay */
+.image#left{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),  url(../img/img-1.jpg);
     background-position: center;
     background-size: cover;
-    position: relative;
 }
 
-#left{
-    background-image: url(../img/img-1.jpg);
+.image#mid{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),  url(../img/banner-2.jpg);
+    background-position: center;
+    background-size: cover;
 }
- #central-bg{
-    background-image: url(../img/banner-2.jpg);
- }
 
-#right{
-    background-image: url(../img/img-3.jpg);
+.image#right{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),  url(../img/img-3.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .row h5{
