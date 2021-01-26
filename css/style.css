@@ -42,7 +42,7 @@ header a{
     padding: 20px calc(5px + .1vw);
 }
 
-/* voglio che il logo sia parte della navbar ma che stia su un'altra riga */
+/* voglio che il logo sia parte della navbar ma sopra */
 header li:first-child{
     display: block;
 }
