@@ -30,25 +30,21 @@ body{
 
 /* header - image and navbar settings*/
 /* logo */
-header img{
-    width: calc(70px + 2.5vw);
-    margin-bottom: 20px;
+#logo img{
+    width: calc(100px + 2.5vw);
 }
 
 /* navbar */
-header a{
+ol a{
     text-decoration: none;
     color: #b2b2b2;
-    padding: 20px calc(5px + .1vw);
 }
 
-/* voglio che il logo sia parte della navbar ma sopra */
-header li:first-child{
-    display: block;
-}
 
 /* link della navbar */
 header li{
+    margin-top:20px;
+    padding: 0 calc(5px + .1vw);
     list-style-type: none;
     display: inline-block;
 }
