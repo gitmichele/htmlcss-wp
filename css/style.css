@@ -1,0 +1,74 @@
+/* regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.container{
+    width: calc(50% + 20vw) ;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* header */
+header{
+    /* DEBUG:  */
+    height: 100px;
+    background-color: blue;
+}
+
+
+/* jumbotron */
+.jumbotron{
+    /* DEBUG:  */
+    height: 400px;
+    background-color: yellow;
+}
+
+
+
+
+/* sezione principale - titolo */
+.title{
+    /* DEBUG:  */
+    height: 75px;
+    background-color: red;
+}
+
+
+/* sezione principale - posiziono colonne con float */
+.aside{
+    float: left;
+    width: 25%;
+    /* DEBUG:  */
+    height: 500px;
+    background-color: lightgreen
+}
+
+.central{
+    float:left;
+    width: calc(50% - 40px);
+    margin: 0 20px;
+    /* DEBUG:  */
+    height: 500px;
+    background-color: lightgreen;
+}
+
+
+
+/* footer */
+footer{
+    /* DEBUG:  */
+    height: 75px;
+    background-color: blue;
+}
