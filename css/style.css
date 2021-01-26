@@ -109,7 +109,6 @@ header li{
 .aside{
     float: left;
     width: 20%;
-    position: relative;
 }
 
 /* colonna centrale */
